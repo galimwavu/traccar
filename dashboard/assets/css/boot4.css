@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 11, 2019, 3:50:32 PM
+    Author     : jammieluvie
+*/
+
+    .nav-mytabs {
+        margin-top: 2rem;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-mytabs li:not(:last-child) {
+        margin-right: 7px;
+        display: table-cell;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .nav-mytabs a {
+      position: relative;
+      top: 4px;
+      padding: 10px 25px;
+      border-radius: 2px 2px 0 0;
+      background: white;
+      color: black;
+      opacity: 0.7;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .nav-mytabs a.active, 
+    .nav-mytabs a:hover {
+      opacity: 1;
+      top: 0;
+      border-bottom-color: transparent;
+      background: #d1dacc;
+    }
+
+    .mytab-content {
+      position: relative;
+      z-index: 2;
+      padding: 25px;
+      border-radius: 0 4px 4px 4px;
+      background: white;
+    }
+  
